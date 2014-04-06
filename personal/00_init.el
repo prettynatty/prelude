@@ -1,2 +1,2 @@
 ;;; First-class initialization
-(prelude-require-packages '(ghc))
+(prelude-require-packages '(ghc smex))
