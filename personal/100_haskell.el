@@ -3,8 +3,13 @@
 (eval-after-load "which-func"
   '(add-to-list 'which-func-modes 'haskell-mode))
 
+(custom-set-variables
+ '(haskell-font-lock-symbols t)
+)
+
 ;(setq ghc-debug t)
 (autoload 'ghc-init "ghc" nil t)
+;(autoload 'ghc-debug "ghc" nil t)
 (add-hook 'haskell-mode-hook (lambda () (ghc-init)))
 
 ;(eval-after-load "haskell-mode"
